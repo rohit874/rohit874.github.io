@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.07s ease;
+  color: white;
+}
+.App{
+  margin: auto;
+  max-width: 800px;
+  /* border: 1px solid red; */
+}
+.top_section{
+  margin: 80px 10px 10px 10px;
+}
+.main_heading{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+.top_section span{ 
+  font-size: 50px;
+  background: linear-gradient(to left,#ff2222, #e94057, #f27121);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 60px;
+}
+
+/* Animation */
+.anim_typewriter{
+border-right: 2px solid rgba(255,255,255,.75);
+animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+.top_section h3{
+  margin:  30px 0 0 0;
+  line-height: 30px;
+ transition: 0.5s;
+}
+.skills_section{
+  margin: 10px;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skills span{
+  display: inline-block;
+  font-size: 15px;
+  background-color: #2b2b2b;
+  padding: 5px 8px;
+  margin: 0 15px 15px 0;
+  border-radius: 5px;
+}
+.skills span:hover{
+  transform: scale(1.1);
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+  background-color: rgba(255, 127, 80, 0.774);
+  /* background: linear-gradient(to right, #cbe249af, rgba(255, 127, 80, 0.774)); */
+}
+.social_icons img{
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 0 10px;
+}
+.social_icons img:hover{
+  transform: scale(1.2);
+}
+.project_section{
+  margin: 30px 10px 10px 10px;
+}
+.section_heading{
+  margin: 20px 0;
+  color: coral;
+}
+.project{
+  border: 1.5px solid coral;
+  padding: 12px 13px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.project:hover{
+  transform: scale(1.02);
+  background: linear-gradient(to right, #000000, rgba(255, 127, 80, 0.568));
+}
+.project_heading{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.project_heading h3, div{
+  background-color: transparent;
+}
+.project_heading a{
+  margin: 8px 20px 5px 0;
+  display: inline-block;
+  padding: 4px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #2b2b2b;
+  transition: 0.2s;
+}
+.project_heading a:hover{
+  transform: scale(1.05);
+  background-color: white;
+  color: #000000;
+  /* background: linear-gradient(to right, #000000, rgba(197, 187, 184, 0.945)); */
+}
+.project p{
+  font-size: 13px;
+  margin: 8px 0 0 0;
+  background-color: transparent;
+}
+.project_tech{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 5px;
+  background-color: transparent;
+}
+.project_tech span{
+  font-size: 12px;
+  background-color: #2b2b2b;
+  padding: 2px 8px;
+  margin: 7px 10px 3px 0;
+  border-radius: 5px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px 10px 10px;
+}
+.footer_social_icon img{
+  width: 25px;
+  height: 25px;
+  margin: 10px 10px 0 10px;
+}
+footer p{
+  font-size: 13px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 49, 49); 
+  border-radius: 10px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: coral;
+}
+@media screen and (max-width: 480px) {
+  .main_heading h1{
+    width: 200px;
+  }
+}
